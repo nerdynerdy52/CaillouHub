@@ -1,17 +1,20 @@
-local currentplace = game.PlaceId
-local supportedgames = {
-    [5987989452] = "https://raw.githubusercontent.com/nerdynerdy52/CaillouHub_MonkeGame/refs/heads/main/madebyeggman",
-    [155615604] = "https://raw.githubusercontent.com/nerdynerdy52/CaillouHub_PrisonLife/refs/heads/main/madebyeggman",
-    [128327213958173] = "https://raw.githubusercontent.com/nerdynerdy52/CaillouHub_DogPound/refs/heads/main/madebyeggman"
-}
-local scripts = supportedgames[currentplace]
+if not game:GetService("UserInputService").TouchEnabled and game:GetService("UserInputService").KeyboardEnabled then
+    local currentplace = game.PlaceId
+    local supportedgames = {
+        [5987989452] = "https://raw.githubusercontent.com/nerdynerdy52/CaillouHub_MonkeGame/refs/heads/main/madebyeggman",
+        [155615604] = "https://raw.githubusercontent.com/nerdynerdy52/CaillouHub_PrisonLife/refs/heads/main/madebyeggman",
+        [135564683255158] = "https://raw.githubusercontent.com/nerdynerdy52/CaillouHub_PrisonLife/refs/heads/main/madebyeggman",
+        [128327213958173] = "https://raw.githubusercontent.com/nerdynerdy52/CaillouHub_DogPound/refs/heads/main/madebyeggman" -- outdated
+    }
+    local scripts = supportedgames[currentplace]
 
-if scripts then
-    local success, result = pcall(function()
-        return game:HttpGet(scripts)
-    end)
+    if scripts then
+        local success, result = pcall(function()
+            return game:HttpGet(scripts)
+        end)
 
-    if success then
-        loadstring(result)()
+        if success then
+            loadstring(result)()
+        end
     end
-end
+else print("your in mobile banned ked") end
