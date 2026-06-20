@@ -4,7 +4,8 @@ if not game:GetService("UserInputService").TouchEnabled and game:GetService("Use
         [5987989452] = "https://raw.githubusercontent.com/nerdynerdy52/CaillouHub_MonkeGame/refs/heads/main/madebyeggman",
         [155615604] = "https://raw.githubusercontent.com/nerdynerdy52/CaillouHub_PrisonLife/refs/heads/main/madebyeggman",
         [135564683255158] = "https://raw.githubusercontent.com/nerdynerdy52/CaillouHub_PrisonLife/refs/heads/main/madebyeggman",
-        [128327213958173] = "https://raw.githubusercontent.com/nerdynerdy52/CaillouHub_DogPound/refs/heads/main/madebyeggman" -- outdated
+        [128327213958173] = "https://raw.githubusercontent.com/nerdynerdy52/CaillouHub_DogPound/refs/heads/main/madebyeggman", -- outdated
+        [8657766101] = "https://raw.githubusercontent.com/nerdynerdy52/CaillouHub_MarvellousSmackdown/refs/heads/main/madebyeggman
     }
     local scripts = supportedgames[currentplace]
 
